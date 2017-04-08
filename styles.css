@@ -1,0 +1,152 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.center {
+  margin: auto;
+}
+
+.header {
+  position: relative;
+}
+
+.logo-container {
+  min-height: 200px;
+}
+
+.is-compact .logo-container {
+  min-height: auto;
+}
+
+.logo-container > div {
+  background: url(images/logo.png);
+  background-size: cover;
+  height: 160px;
+  width: 160px;
+  margin: auto auto 16px;
+}
+
+.is-compact .logo-container > div {
+  height: 46px;
+  width: 46px;
+  margin: 8px auto;
+}
+
+.header-content {
+  background-color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  height: 46px;
+}
+
+.header-content .mdl-navigation {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.header-content .mdl-navigation__link {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  line-height: 42px;
+}
+
+.header-content .is-active {
+  position: relative;
+  font-weight: bold;
+}
+
+.header-content .is-active:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: #2196F3;
+  bottom: 0;
+  left: 0;
+}
+
+.padding-top {
+  padding: 10px 0 0;
+}
+
+.skill-list-item {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-card > .mdl-card__title,
+.contact-card > .mdl-card__actions,
+.contact-card > .mdl-card__actions > .mdl-button {
+  color: white;
+}
+
+.contact-card > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-name {
+  font-weight: 200;
+}
+
+.ripple-background {
+  position: relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.char-icon {
+  border-radius: 50%;
+  text-align: center;
+  display: table;
+}
+
+.char-icon > label {
+  font-size: 18px;
+  font-weight: 300;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+.skill-type {
+  margin-left: 16px;
+}
+
+.skill-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.light-green {
+  background: #689F38;
+}
+
+.teal {
+  background: #009688;
+}
+
+.grey {
+  background: #424242;
+}
+
+.blue {
+  background: #2196F3;
+}
+
+.light-blue {
+  background: #039BE5;
+}
+
+.brown {
+  background: #795548;
+}

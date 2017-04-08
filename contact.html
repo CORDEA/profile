@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <title>Yoshihiro's Profile</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-blue.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="app">
+    <my-header :index=2></my-header>
+    <drawer :index=2></drawer>
+    <main class="mdl-layout__content">
+      <div class="mdl-grid container">
+        <template v-for="contact in contacts">
+          <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--2dp contact-card" v-bind:class="contact.color">
+            <div class="mdl-card__title mdl-card--expand">
+              <h4 class="mdl-typography--display-1 contact-name">
+                {{ contact.name }}
+              </h4>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" v-on:click="click(contact)">
+                EXPLORE
+              </a>
+              <div class="mdl-layout-spacer"></div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <my-footer></my-footer>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="bower_components/vue/dist/vue.min.js"></script>
+  <script src="bower_components/axios/dist/axios.min.js"></script>
+  <script src="my_header.js"></script>
+  <script src="drawer.js"></script>
+  <script src="my_footer.js"></script>
+  <script src="contact.js"></script>
+  <script src="constants.js"></script>
+</body>
+</html>

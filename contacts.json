@@ -1,0 +1,40 @@
+{
+  "contacts": [
+    {
+      "name": "GitHub",
+      "userName": "CORDEA",
+      "url": "https://github.com/CORDEA",
+      "color": "grey"
+    },
+    {
+      "name": "Qiita",
+      "userName": "CORDEA",
+      "url": "http://qiita.com/CORDEA",
+      "color": "light-green"
+    },
+    {
+      "name": "Hatenablog",
+      "userName": "CORDEA",
+      "url": "http://cordea.hatenadiary.com/",
+      "color": "light-blue"
+    },
+    {
+      "name": "LinkedIn",
+      "userName": "Yoshihiro Tanaka",
+      "url": "https://www.linkedin.com/in/cordea/",
+      "color": "blue"
+    },
+    {
+      "name": "Kickstarter",
+      "userName": "Yoshihiro Tanaka",
+      "url": "https://www.kickstarter.com/profile/CORDEA",
+      "color": "teal"
+    },
+    {
+      "name": "Mail",
+      "userName": "Yoshihiro Tanaka",
+      "url": "mailto:contact@cordea.jp",
+      "color": "brown"
+    }
+  ]
+}
