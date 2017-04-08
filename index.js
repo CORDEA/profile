@@ -21,7 +21,7 @@ new Vue({
     el: '#app',
     data: {
       name: 'Yoshihiro Tanaka',
-      description: 'Android / Xamarin Developer. Favorite computer language is Nim, Python, awk, favorite OS is Fedora.',
+      description: 'Android / Xamarin Developer. Favorite computer language is Nim, Python, awk, favorite Linux distribution is Fedora.',
       organization: 'Fenrir Inc.',
       location: 'Osaka, Japan',
     },
