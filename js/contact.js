@@ -19,9 +19,9 @@
 
 import Vue from 'vue'
 import axios from 'axios'
-import _ from './my_header'
-import _ from './my_footer'
-import _ from './drawer'
+import './my_header'
+import './my_footer'
+import './drawer'
 
  new Vue({
    el: '#app',

@@ -39,4 +39,26 @@ module.exports = {
       vue: 'vue/dist/vue.js'
     },
   },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          comments: false,
+          compact: true,
+          presets: ['es2015']
+        }
+      }
+    ]
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false,
+    }),
+  ],
 }
