@@ -17,6 +17,8 @@
  * date  : 2017-04-08
  */
 
+import Vue from 'vue'
+
 Vue.component('my-header', {
   props: ['index'],
   template: `

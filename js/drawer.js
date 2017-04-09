@@ -17,19 +17,23 @@
  * date  : 2017-04-08
  */
 
-Vue.component('my-footer', {
-  data: function() {
-    return {
-      sourceUrl: 'https://github.com/CORDEA/profile',
-    }
-  },
+import Vue from 'vue'
+
+Vue.component('drawer', {
+  props: ['index'],
   template: `
-  <footer class="mdl-mini-footer" id="footer">
-    <div class="mdl-mini-footer__right-section">
-      <ul class="mdl-mini-footer__link-list">
-        <li><a v-bind:href="sourceUrl">Source</a></li>
-      </ul>
-    </div>
-  </footer>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+      <a class="mdl-navigation__link"
+        :class="{'is-active': index === 0}"
+        href="index.html">Profile</a>
+      <a class="mdl-navigation__link"
+        :class="{'is-active': index === 1}"
+        href="skill.html">Skill</a>
+      <a class="mdl-navigation__link"
+        :class="{'is-active': index === 2}"
+        href="contact.html">Contact</a>
+    </nav>
+  </div>
   `,
 })

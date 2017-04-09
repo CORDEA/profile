@@ -31,36 +31,30 @@
                 </h3>
                 <template v-for="skill in skills">
                   <li class="mdl-list__item mdl-list__item--two-line"
-                  :class="[{'mdl-js-ripple-effect': skill.clickable}, {'ripple-background': skill.clickable}]"
-                  @click="skill.click()">
-                  <span class="mdl-list__item-primary-content">
-                    <char-icon class="mdl-list__item-avatar" :char="skill.char" :color="skill.color"></char-icon>
-                    <span>{{ skill.title }}</span>
-                    <span class="mdl-list__item-sub-title">{{ skill.year }}</span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <i class="material-icons skill-icon" v-if="skill.level === 3">star</i>
-                    <i class="material-icons skill-icon" v-else-if="skill.level === 2">star_half</i>
-                    <i class="material-icons skill-icon" v-else-if="skill.level === 1">star_border</i>
-                  </span>
-                  <span class="mdl-ripple" v-if="skill.clickable"></span>
-                </li>
+                    :class="[{'mdl-js-ripple-effect': skill.clickable}, {'ripple-background': skill.clickable}]"
+                    @click="skill.click()">
+                    <span class="mdl-list__item-primary-content">
+                      <char-icon class="mdl-list__item-avatar" :char="skill.char" :color="skill.color"></char-icon>
+                      <span>{{ skill.title }}</span>
+                      <span class="mdl-list__item-sub-title">{{ skill.year }}</span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <i class="material-icons skill-icon" v-if="skill.level === 3">star</i>
+                      <i class="material-icons skill-icon" v-else-if="skill.level === 2">star_half</i>
+                      <i class="material-icons skill-icon" v-else-if="skill.level === 1">star_border</i>
+                    </span>
+                    <span class="mdl-ripple" v-if="skill.clickable"></span>
+                  </li>
+                </template>
               </template>
-            </template>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <my-footer></my-footer>
-  </main>
-</div>
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="bower_components/vue/dist/vue.min.js"></script>
-<script src="bower_components/axios/dist/axios.min.js"></script>
-<script src="my_header.js"></script>
-<script src="drawer.js"></script>
-<script src="my_footer.js"></script>
-<script src="char_icon.js"></script>
-<script src="skill.js"></script>
+      <my-footer></my-footer>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="js/skill.bundle.js"></script>
 </body>
 </html>

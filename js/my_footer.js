@@ -17,7 +17,21 @@
  * date  : 2017-04-08
  */
 
-Vue.component('char-icon', {
-  props: ['color', 'char'],
-  template: '<div class="char-icon" v-bind:class="color" ><label>{{ char }}</label></div>'
+import Vue from 'vue'
+
+Vue.component('my-footer', {
+  data: function() {
+    return {
+      sourceUrl: 'https://github.com/CORDEA/profile',
+    }
+  },
+  template: `
+  <footer class="mdl-mini-footer" id="footer">
+    <div class="mdl-mini-footer__right-section">
+      <ul class="mdl-mini-footer__link-list">
+        <li><a v-bind:href="sourceUrl">Source</a></li>
+      </ul>
+    </div>
+  </footer>
+  `,
 })

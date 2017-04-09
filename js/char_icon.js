@@ -17,27 +17,9 @@
  * date  : 2017-04-08
  */
 
- new Vue({
-   el: '#app',
-   data: {
-     contacts: [],
-   },
-   created: function() {
-     this.fetchContacts()
-   },
-   methods: {
-     fetchContacts: function() {
-       var self = this
-       axios
-       .get('./contacts.json')
-       .then(function (response) {
-         self.contacts = response.data.contacts;
-       })
-       .catch(function (error) {
-       })
-     },
-     click: function(contact) {
-       window.open(contact.url, '_self')
-     }
-   }
- })
+import Vue from 'vue'
+
+Vue.component('char-icon', {
+  props: ['color', 'char'],
+  template: '<div class="char-icon" v-bind:class="color" ><label>{{ char }}</label></div>'
+})

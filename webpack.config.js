@@ -14,24 +14,29 @@
  * limitations under the License.
  *
  * Author: Yoshihiro Tanaka <contact@cordea.jp>
- * date  : 2017-04-08
+ * date  : 2017-04-09
  */
 
-Vue.component('drawer', {
-  props: ['index'],
-  template: `
-  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-      <a class="mdl-navigation__link"
-        :class="{'is-active': index === 0}"
-        href="index.html">Profile</a>
-      <a class="mdl-navigation__link"
-        :class="{'is-active': index === 1}"
-        href="skill.html">Skill</a>
-      <a class="mdl-navigation__link"
-        :class="{'is-active': index === 2}"
-        href="contact.html">Contact</a>
-    </nav>
-  </div>
-  `,
-})
+var path = require('path')
+var webpack = require('webpack')
+
+module.exports = {
+  entry: {
+    index: './js/index',
+    skill: './js/skill',
+    contact: './js/contact',
+  },
+  output: {
+    path: path.join(__dirname, 'js'),
+    filename: '[name].bundle.js',
+    chunkFilename: '[id].chunk.js',
+  },
+  resolve: {
+    modules: ['bower_components'],
+    descriptionFiles: ['bower.json', 'package.json'],
+    mainFields: ['main'],
+    alias: {
+      vue: 'vue/dist/vue.js'
+    },
+  },
+}

@@ -17,12 +17,33 @@
  * date  : 2017-04-08
  */
 
-new Vue({
-    el: '#app',
-    data: {
-      name: 'Yoshihiro Tanaka',
-      description: 'Android / Xamarin Developer. Favorite computer language is Nim, Python, awk, favorite Linux distribution is Fedora.',
-      organization: 'Fenrir Inc.',
-      location: 'Osaka, Japan',
-    },
-})
+import Vue from 'vue'
+import axios from 'axios'
+import _ from './my_header'
+import _ from './my_footer'
+import _ from './drawer'
+
+ new Vue({
+   el: '#app',
+   data: {
+     contacts: [],
+   },
+   created: function() {
+     this.fetchContacts()
+   },
+   methods: {
+     fetchContacts: function() {
+       var self = this
+       axios
+       .get('./contacts.json')
+       .then(function (response) {
+         self.contacts = response.data.contacts;
+       })
+       .catch(function (error) {
+       })
+     },
+     click: function(contact) {
+       window.open(contact.url, '_self')
+     }
+   }
+ })
