@@ -32,7 +32,7 @@ module.exports = {
     chunkFilename: '[id].chunk.js',
   },
   resolve: {
-    modules: ['bower_components'],
+    modules: ['node_modules', 'bower_components'],
     descriptionFiles: ['bower.json', 'package.json'],
     mainFields: ['main'],
     alias: {
