@@ -94,7 +94,7 @@ new Vue({
             color: self.color(char),
             year: x.startYear + ' ~ ' + x.endYear,
             level: x.level,
-            clickable: x.type !== 'OS / Distribution',
+            clickable: x.type !== 'OS / Distribution (User)',
           }
           item.click = function() {
             self.click(item)
