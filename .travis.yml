@@ -8,3 +8,4 @@ install:
     - npm install
     - ./node_modules/bower/bin/bower install
     - ./node_modules/webpack/bin/webpack.js
+    - find js ! -name "*.bundle.js" -exec rm {} \;
