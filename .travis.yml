@@ -9,3 +9,9 @@ install:
     - ./node_modules/bower/bin/bower install
     - ./node_modules/webpack/bin/webpack.js
     - find js ! -name "*.bundle.js" -exec rm {} \;
+deploy:
+    provider: s3
+    access_key_id: $ACCESS_KEY_ID
+    secret_access_key: $SECRET_ACCESS_KEY
+    bucket: cordea.jp
+    skip_cleanup: true
