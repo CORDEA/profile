@@ -8,7 +8,9 @@ install:
     - npm install
     - ./node_modules/bower/bin/bower install
     - ./node_modules/webpack/bin/webpack.js
+before_deploy:
     - find js ! -name "*.bundle.js" -exec rm {} \;
+    - rm -rf bower_components node_modules
 deploy:
     provider: s3
     access_key_id: $ACCESS_KEY_ID
