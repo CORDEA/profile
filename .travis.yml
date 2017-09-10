@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+os:
+    - linux
+node_js:
+    - "node"
+install:
+    - npm install
+    - bower install
+    - ./node_modules/webpack/bin/webpack.js
