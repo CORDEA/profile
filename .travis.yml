@@ -6,5 +6,5 @@ node_js:
     - "node"
 install:
     - npm install
-    - bower install
+    - ./node_modules/bower/bin/bower install
     - ./node_modules/webpack/bin/webpack.js
