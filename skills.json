@@ -203,6 +203,15 @@
       "level": 0
     },
     {
+      "type": "Language",
+      "title": "Rust",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
       "type": "Mobile Platform (Developer)",
       "title": "Xamarin.Android",
       "linkName": "xamarin-android",
