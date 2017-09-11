@@ -221,6 +221,16 @@
       "level": 0
     },
     {
+      "type": "Language",
+      "title": "Perl 6",
+      "linkName": "perl%206",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
       "type": "Mobile Platform (Developer)",
       "title": "Xamarin.Android",
       "linkName": "xamarin-android",
