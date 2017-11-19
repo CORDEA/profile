@@ -11,3 +11,5 @@
 /test/sample
 !/test/sample/bower.json
 /npm-shrinkwrap.json
+
+.DS_Store
