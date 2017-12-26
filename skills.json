@@ -231,6 +231,51 @@
       "level": 0
     },
     {
+      "type": "Language",
+      "title": "Red",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
+      "type": "Language",
+      "title": "Haskell",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
+      "type": "Language",
+      "title": "Volt",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
+      "type": "Language",
+      "title": "ooc",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
+      "type": "Language",
+      "title": "Haxe",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
       "type": "Mobile Platform (Developer)",
       "title": "Xamarin.Android",
       "linkName": "xamarin-android",
