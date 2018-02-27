@@ -276,6 +276,15 @@
       "level": 0
     },
     {
+      "type": "Language",
+      "title": "Scala",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2018,
+      "endYear": 2018,
+      "level": 0
+    },
+    {
       "type": "Mobile Platform (Developer)",
       "title": "Xamarin.Android",
       "linkName": "xamarin-android",
